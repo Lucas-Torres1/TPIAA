@@ -1,64 +1,47 @@
-# Nome do Jogo
+# Real ou Gerado?
 
 Projeto final da disciplina de Introdução a Algoritmos/Programação, desenvolvido com Python e Pygame.
 
-Este repositório é um template para os grupos da disciplina. A proposta é começar com uma base funcional e evoluir o jogo ao longo do semestre.
-
 ## Integrantes do grupo
 
-- Nome do integrante 1
-- Nome do integrante 2
-- Nome do integrante 3
-- Nome do integrante 4
+- Bernardo Duarte
+- Gustavo Montanari
+- Lucas Torres
 
 ## Estrutura do projeto
 
 - `main.py`: ponto de entrada da aplicação.
-- `src/`: código-fonte principal do jogo (loop, regras, sprites e dados).
+- `src/`: código-fonte principal do jogo (laço, regras, interface e dados).
 - `assets/`: imagens, fontes e sons.
-- `data/`: arquivos persistentes (recorde/ranking).
+- `data/`: arquivos persistentes (banco de textos e recorde).
 - `tests/`: testes unitários com `pytest`.
-- `docs/`: documentação do projeto, incluindo proposta inicial.
+- `docs/`: documentação do projeto, incluindo a proposta inicial.
 
 ## Descrição do jogo
 
-Descreva brevemente a ideia principal do jogo.
-
-Exemplo:
-
-> O jogo consiste em controlar um personagem que deve coletar moedas e evitar obstáculos. O jogador ganha pontos ao coletar itens e perde vidas ao colidir com obstáculos. A partida termina quando o tempo acaba ou quando o jogador perde todas as vidas.
+Quiz de decisão rápida sobre conteúdos reais e artificiais. A cada rodada aparece um texto curto, e o jogador precisa decidir se ele foi escrito por um humano ou gerado por IA. Depois de cada resposta, o jogo mostra o resultado e uma pista que explica como reconhecer aquele tipo de texto. O tema de uso responsável aparece na própria mecânica: análise crítica, transparência e cuidado com a confiabilidade do que lemos.
 
 ## Objetivo do jogador
 
-Explique o que o jogador precisa fazer para vencer ou avançar no jogo.
-
-Exemplo:
-
-> O objetivo é coletar a maior quantidade possível de itens antes que o tempo acabe, evitando colisões com os obstáculos.
+Classificar corretamente o maior número possível de textos, terminando a partida com pelo menos 1 vida, e superar o recorde.
 
 ## Regras do jogo
 
-Liste as principais regras do jogo.
-
-Exemplo:
-
-- O jogador se movimenta usando as setas do teclado.
-- Cada item coletado aumenta a pontuação.
-- Colidir com um obstáculo reduz a quantidade de vidas.
-- A partida termina quando o jogador perde todas as vidas ou quando o tempo acaba.
+- Cada partida tem 12 rodadas, sorteadas de um banco de textos em arquivo.
+- O jogador tem 15 segundos por rodada para escolher Humano ou IA.
+- Acerto: +10 pontos, com bônus de combo para acertos seguidos.
+- Erro ou tempo esgotado: perde 1 vida e o combo zera.
+- O jogador tem 3 dicas por partida; usar uma dica revela uma pista, mas reduz os pontos da rodada.
+- Vitória: concluir as 12 rodadas com pelo menos 1 vida. Derrota: perder as 3 vidas.
+- O recorde é salvo em arquivo na pasta `data/`.
 
 ## Controles
 
-Informe as teclas ou comandos utilizados no jogo.
-
-Exemplo:
-
-- Seta para cima: mover para cima
-- Seta para baixo: mover para baixo
-- Seta para esquerda: mover para esquerda
-- Seta para direita: mover para direita
-- Espaço: realizar ação
-- ESC: sair do jogo
+- `H` ou seta esquerda: marcar como Humano
+- `I` ou seta direita: marcar como IA
+- `D`: usar uma dica
+- `Enter`: iniciar / avançar
+- `Esc`: sair do jogo
 
 ## Como executar o projeto
 
@@ -77,15 +60,13 @@ python main.py
 python -m pytest
 ```
 
-## Checklist mínimo para entrega
+## Recursos externos
 
-- Preencher este README com nome final, descrição real, regras e controles do jogo.
-- Atualizar `docs/proposta.MD` com a proposta do grupo.
-- Garantir que o jogo executa com `python main.py`.
-- Garantir que os testes passam com `pytest`.
+Até o momento, nenhum recurso externo é usado além de Python e Pygame. Se forem usados imagens, sons, fontes, código ou tutoriais, serão listados aqui com origem e licença.
 
-## Observações para os alunos
+Os textos do banco `data/textos.json` foram escritos pelo grupo, já os que foram gerados por ferramenta de IA estão identificados no próprio arquivo.
 
-- Mantenham o código organizado em módulos pequenos e com responsabilidade clara.
-- Comentem partes importantes da lógica, principalmente regras do jogo.
-- Registrem decisões técnicas no README do grupo ao longo do desenvolvimento.
+## Decisões técnicas
+
+- Os textos e o recorde ficam em arquivos JSON.
+- A lógica do jogo (pontuação, vidas, combo) fica separada da interface para facilitar os testes.
