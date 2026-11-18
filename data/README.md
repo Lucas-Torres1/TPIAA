@@ -4,7 +4,8 @@ Esta pasta guarda arquivos de persistencia simples em texto.
 
 ## Arquivos
 
-- `recorde.txt`: melhor pontuacao registrada.
+- `recorde.json`: melhor pontuacao registrada.
+- `textos.json`: textos para funcionamento do jogo.
 - `ranking.txt`: base para ranking de jogadores (opcional neste template).
 - `README.txt`: arquivo legado; manter por compatibilidade se necessario.
 

@@ -1,0 +1,88 @@
+{
+  "textos": [
+    {
+      "texto": "Ontem o ônibus quebrou na altura do Mineirão e eu fiquei meia hora parado debaixo de uma chuva que não era nem forte, só chata. Cheguei na prova com o tênis encharcado e a letra tremendo de frio.",
+      "origem": "humano",
+      "dica": "Procure detalhes muito específicos e pessoais.",
+      "explicacao": "Lugar real, situação cotidiana e um detalhe pouco 'perfeito' (chuva 'só chata'). Textos humanos costumam ter memória concreta."
+    },
+    {
+      "texto": "Não sei o que quero ser, mas sei muito bem o que não quero me tornar.",
+      "origem": "humano",
+      "dica": "Pessimismo",
+      "explicacao": "Fala real de uma pessoa, mais especificamente Friedrich Nietzsche."
+    },
+    {
+      "texto": "O que é o que é clara e salgada, cabe em um olho e pesa uma tonelada, tem sabor de mar, pode ser discreta.",
+      "origem": "humano",
+      "dica": "É uma música.",
+      "explicacao": "Fala do ManoBrown na música Jesus Chorou."
+    },
+    {
+      "texto": "Quem teme ser vencido tem certeza da derrota",
+      "origem": "humano",
+      "dica": "Uma frase digna de um grande Conquistador",
+      "explicacao": "Frase famosa de Napoleão Bonaparte"
+    },
+    {
+      "texto": "E se o curupira fizer moonwalk, ele tá indo pra frente ou pra tras?, Curupira mandar moonwalk tá errado, porque se ele tá andando pra frente já é moonwalk normal independente da posição dos pés",
+      "origem": "humano",
+      "dica": "Trecho de uma música",
+      "explicacao": "Questionamento profundo sobre o caminhar de uma lenda do folclore brasileiro por Major RD na música Só Rock 2."
+    },
+    {
+      "texto": "Com grandes poderes vem grandes responsabilidades",
+      "origem": "humano",
+      "dica": "Frase de um filme famoso.",
+      "explicacao": "Frase do Tio Ben para Peter Parker no filme Homem-Aranha (2002)"
+    },
+    {
+      "texto": "Ao verme que primeiro roeu as frias carnes do meu cadáver dedico como saudosa lembrança estas memórias póstumas.",
+      "origem": "humano",
+      "dica": "Dedicatória de um livro",
+      "explicacao": "Dedicatória de Memórias Póstumas de Brás Cubas escrito por Machado de Assis"
+    },
+    {
+      "texto": "A tecnologia desempenha um papel fundamental na sociedade moderna, oferecendo inúmeras oportunidades para o desenvolvimento humano. Por outro lado, é essencial que seu uso seja feito de forma ética e responsável, garantindo benefícios para todos.",
+      "origem": "ia",
+      "dica": "Nenhum detalhe concreto, só ideias gerais.",
+      "explicacao": "Frases genéricas, 'por outro lado' e conclusão moralizante sem exemplo concreto são marcas típicas de texto gerado."
+    },
+    {
+      "texto": "Em resumo, a prática regular de exercícios físicos traz diversos benefícios, como melhora da saúde cardiovascular, aumento da disposição e redução do estresse. Portanto, incorporar a atividade física à rotina é uma escolha valiosa.",
+      "origem": "ia",
+      "dica": "Veja a estrutura: lista de benefícios + conclusão.",
+      "explicacao": "Estrutura de redação escolar (lista de três itens, 'em resumo', 'portanto') e ausência de voz pessoal."
+    },
+    {
+      "texto": "Belo Horizonte é uma cidade vibrante, repleta de cultura, gastronomia e história. Seus encantos atraem visitantes de diversas regiões, proporcionando experiências inesquecíveis a todos que a conhecem.",
+      "origem": "ia",
+      "dica": "Parece folheto de turismo.",
+      "explicacao": "Adjetivos vagos ('vibrante', 'inesquecíveis') sem nenhum lugar, prato ou história específica."
+    },
+    {
+      "texto": "É importante destacar que a leitura é uma ferramenta essencial para a formação do pensamento crítico. Além disso, ela amplia o vocabulário e estimula a criatividade, contribuindo para o crescimento pessoal e profissional.",
+      "origem": "ia",
+      "dica": "Conectivos muito certinhos.",
+      "explicacao": "'É importante destacar' e 'além disso' em sequência, com afirmações corretas porém vazias, são padrão de IA."
+    },
+    {
+      "texto": "A inteligência artificial vem transformando diversos setores da economia, como saúde, educação e finanças. No entanto, é fundamental considerar os desafios éticos associados, como a privacidade e a transparência dos algoritmos.",
+      "origem": "ia",
+      "dica": "Equilíbrio perfeito entre vantagem e ressalva.",
+      "explicacao": "Estrutura 'benefício, no entanto, ressalva' com listas de três itens: tom neutro e sem opinião própria."
+    },
+    {
+      "texto": "Sem dúvida, o café é uma das bebidas mais apreciadas do mundo. Sua rica história, seus aromas marcantes e sua versatilidade o tornam um elemento central em diversas culturas ao redor do globo.",
+      "origem": "ia",
+      "dica": "Tom de enciclopédia entusiasmada.",
+      "explicacao": "Superlativos e fórmulas ('sem dúvida', 'ao redor do globo') sem nenhuma experiência pessoal com café."
+    },
+    {
+      "texto": "Para ter sucesso nos estudos, é recomendável estabelecer uma rotina, definir metas claras e manter o equilíbrio entre descanso e dedicação. Dessa forma, o aprendizado se torna mais eficiente e prazeroso.",
+      "origem": "ia",
+      "dica": "É um conselho que serve para qualquer pessoa.",
+      "explicacao": "Conselho universal e polido, sem erro, sem exemplo e sem ninguém por trás: texto 'neutro demais'."
+    }
+  ]
+}
