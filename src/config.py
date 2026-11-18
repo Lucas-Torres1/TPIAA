@@ -25,7 +25,7 @@ COR_VIDA_PERDIDA = (70, 70, 80)
 
 # Caminhos
 PASTA_PROJETO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-CAMINHO_RECORDE = os.path.join(PASTA_PROJETO, "data", "recorde.txt")
+CAMINHO_RECORDE = os.path.join(PASTA_PROJETO, "data", "recorde.json")
 CAMINHO_TEXTOS = os.path.join(PASTA_PROJETO, "data", "textos.json")
 
 # Regras da partida

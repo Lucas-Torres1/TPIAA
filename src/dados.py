@@ -4,24 +4,22 @@ import random
 CAMPOS_OBRIGATORIOS = ("texto", "origem", "dica", "explicacao")
 
 def salvar_recorde(caminho_arquivo, pontuacao):
-    """Salva a pontuação recorde em arquivo texto."""
+    """Salva a pontuação recorde em arquivo JSON, no formato {"recorde": 123}."""
     with open(caminho_arquivo, "w", encoding="utf-8") as arquivo:
-        arquivo.write(str(pontuacao))
+        json.dump({"recorde": int(pontuacao)}, arquivo)
 
 
 def carregar_recorde(caminho_arquivo):
     """Carrega o recorde salvo; retorna 0 se não existir valor válido."""
     try:
         with open(caminho_arquivo, "r", encoding="utf-8") as arquivo:
-            conteudo = arquivo.read().strip()
+            conteudo = json.load(arquivo)
 
-            if conteudo == "":
-                return 0
+        return int(conteudo["recorde"])
 
-            return int(conteudo)
-
-    except FileNotFoundError:
+    except (FileNotFoundError, ValueError, KeyError, TypeError):
         return 0
+
 
 def carregar_textos(caminho_arquivo):
     """Lê o banco de textos (JSON) e ignora entradas incompletas ou inválidas."""
