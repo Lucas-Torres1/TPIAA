@@ -1,3 +1,8 @@
+import json
+import random
+
+CAMPOS_OBRIGATORIOS = ("texto", "origem", "dica", "explicacao")
+
 def salvar_recorde(caminho_arquivo, pontuacao):
     """Salva a pontuação recorde em arquivo texto."""
     with open(caminho_arquivo, "w", encoding="utf-8") as arquivo:
@@ -17,3 +22,22 @@ def carregar_recorde(caminho_arquivo):
 
     except FileNotFoundError:
         return 0
+
+def carregar_textos(caminho_arquivo):
+    """Lê o banco de textos (JSON) e ignora entradas incompletas ou inválidas."""
+    with open(caminho_arquivo, "r", encoding="utf-8") as arquivo:
+        conteudo = json.load(arquivo)
+
+    lista = conteudo["textos"] if isinstance(conteudo, dict) else conteudo
+
+    textos_validos = []
+    for item in lista:
+        completo = all(campo in item for campo in CAMPOS_OBRIGATORIOS)
+        if completo and item["origem"] in ("humano", "ia"):
+            textos_validos.append(item)
+    return textos_validos
+
+
+def sortear_textos(textos, quantidade):
+    """Sorteia até `quantidade` textos, sem repetir."""
+    return random.sample(textos, min(quantidade, len(textos)))
